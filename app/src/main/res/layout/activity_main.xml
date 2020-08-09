@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC959898"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/wye_to_delta_rdButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0B5DA5"
+            android:checked="true"
+            android:text="Y-->Δ" />
+
+        <RadioButton
+            android:id="@+id/delta_to_wye_rdButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#0B5DA5"
+            android:checked="false"
+            android:text="Δ-->Υ" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtViewR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdGroup"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="27dp"
+        android:layout_alignEnd="@+id/txtViewR2"
+        android:layout_alignRight="@+id/txtViewR2"
+        android:text="R1: " />
+
+    <EditText
+        android:id="@+id/edtTextR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/txtViewR1"
+        android:layout_toRightOf="@+id/txtViewR1"
+        android:layout_marginLeft="30dp"
+        android:hint="Enter R1"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtViewR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R2: "
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtViewR1"/>
+
+    <EditText
+        android:id="@+id/edtTextR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtViewR2"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/txtViewR2"
+        android:hint="Enter R2"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtViewR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtViewR2"
+        android:text="R3: " />
+
+    <EditText
+        android:id="@+id/edtTextR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBaseline="@+id/txtViewR3"
+        android:layout_toRightOf="@+id/txtViewR3"
+        android:hint="Enter R3"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/txtViewRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txtViewR3"
+        android:text="Ra: " />
+
+
+    <EditText
+        android:id="@+id/edtTextRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBaseline="@+id/txtViewRa"
+        android:layout_toRightOf="@+id/txtViewRa"
+        android:hint="Enter Ra"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/txtViewRb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/txtViewRa"
+        android:text="Rb: " />
+
+    <EditText
+        android:id="@+id/edtTextRb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBaseline="@+id/txtViewRb"
+        android:layout_toRightOf="@+id/txtViewRb"
+        android:hint="Enter Rb"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtViewRc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/txtViewRb"
+        android:text="Rc: " />
+
+    <EditText
+        android:id="@+id/edtTextRc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBaseline="@+id/txtViewRc"
+        android:layout_toRightOf="@+id/txtViewRc"
+        android:hint="Enter Rc"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#605D5D"
+        android:text="Calculate"
+        android:textColor="#FAF0ED"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/clearButton"
+        android:layout_marginLeft="230dp"
+        android:onClick="onClickCalcBtnMethod"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:backgroundTint="#605D5D"
+        android:text="Clear All"
+        android:textColor="#FAF0ED"
+        android:textStyle="bold"
+        android:layout_marginLeft="90dp"
+        android:onClick="onClickClrBtnMethod"/>
+
+    <ImageView
+        android:id="@+id/wye_delta_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="415dp"
+        android:src="@drawable/ic_delta_wye" />
+
+
+</RelativeLayout>
