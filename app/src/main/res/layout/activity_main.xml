@@ -41,19 +41,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rdGroup"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="27dp"
         android:layout_alignEnd="@+id/txtViewR2"
         android:layout_alignRight="@+id/txtViewR2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="27dp"
         android:text="R1: " />
 
     <EditText
         android:id="@+id/edtTextR1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_alignBaseline="@+id/txtViewR1"
-        android:layout_toRightOf="@+id/txtViewR1"
+        android:layout_alignBaseline="@+id/txtViewR1"
         android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/txtViewR1"
         android:hint="Enter R1"
         android:inputType="number" />
 
@@ -61,10 +61,10 @@
         android:id="@+id/txtViewR2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R2: "
+        android:layout_below="@+id/txtViewR1"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/txtViewR1"/>
+        android:text="R2: " />
 
     <EditText
         android:id="@+id/edtTextR2"
@@ -80,17 +80,17 @@
         android:id="@+id/txtViewR3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewR2"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/txtViewR2"
         android:text="R3: " />
 
     <EditText
         android:id="@+id/edtTextR3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:layout_alignBaseline="@+id/txtViewR3"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/txtViewR3"
         android:hint="Enter R3"
         android:inputType="number" />
@@ -100,9 +100,9 @@
         android:id="@+id/txtViewRa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewR3"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="60dp"
-        android:layout_below="@+id/txtViewR3"
         android:text="Ra: " />
 
 
@@ -110,10 +110,10 @@
         android:id="@+id/edtTextRa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:layout_alignBaseline="@+id/txtViewRa"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/txtViewRa"
-        android:hint="Enter Ra"
+        android:hint=" "
         android:inputType="number" />
 
 
@@ -121,38 +121,38 @@
         android:id="@+id/txtViewRb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="100dp"
         android:layout_below="@+id/txtViewRa"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
         android:text="Rb: " />
 
     <EditText
         android:id="@+id/edtTextRb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:layout_alignBaseline="@+id/txtViewRb"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/txtViewRb"
-        android:hint="Enter Rb"
+        android:hint=" "
         android:inputType="number" />
 
     <TextView
         android:id="@+id/txtViewRc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="100dp"
         android:layout_below="@+id/txtViewRb"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
         android:text="Rc: " />
 
     <EditText
         android:id="@+id/edtTextRc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:layout_alignBaseline="@+id/txtViewRc"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/txtViewRc"
-        android:hint="Enter Rc"
+        android:hint=" "
         android:inputType="number" />
 
 
@@ -160,25 +160,25 @@
         android:id="@+id/calculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#605D5D"
-        android:text="Calculate"
-        android:textColor="#FAF0ED"
-        android:textStyle="bold"
         android:layout_alignTop="@+id/clearButton"
         android:layout_marginLeft="230dp"
-        android:onClick="onClickCalcBtnMethod"/>
+        android:backgroundTint="#605D5D"
+        android:onClick="onClickCalcBtnMethod"
+        android:text="Calculate"
+        android:textColor="#FAF0ED"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
         android:layout_marginTop="370dp"
         android:backgroundTint="#605D5D"
+        android:onClick="onClickClrBtnMethod"
         android:text="Clear All"
         android:textColor="#FAF0ED"
-        android:textStyle="bold"
-        android:layout_marginLeft="90dp"
-        android:onClick="onClickClrBtnMethod"/>
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/wye_delta_img"
