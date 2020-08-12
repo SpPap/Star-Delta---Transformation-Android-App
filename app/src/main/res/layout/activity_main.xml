@@ -188,5 +188,26 @@
         android:layout_marginVertical="415dp"
         android:src="@drawable/ic_delta_wye" />
 
+    <Spinner
+        android:id="@+id/R1_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edtTextR1"
+        android:layout_alignTop="@id/edtTextR1"/>
+
+    <Spinner
+        android:id="@+id/R2_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edtTextR2"
+        android:layout_alignTop="@id/edtTextR2"/>
+
+    <Spinner
+        android:id="@+id/R3_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edtTextR3"
+        android:layout_alignTop="@id/edtTextR3"/>
+
 
 </RelativeLayout>
